@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  calc-api:
+    build: ./calc-api
+    ports:
+      - "5001:5000"
+    restart: unless-stopped
