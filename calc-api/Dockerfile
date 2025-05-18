@@ -7,7 +7,7 @@ WORKDIR /app
 COPY app.py .
 
 # Install Flask
-RUN pip install flask
+RUN pip install --no-cache-dir flask
 
 # Expose the port Flask will run on
 EXPOSE 5000
